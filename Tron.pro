@@ -41,5 +41,3 @@ FORMS    += gamewindow.ui
 RESOURCES += \
     images.qrc
 
-DISTFILES += \
-    ../../VS_С_Projects/lab13_romanchuk/lab13_romanchuk/books.txt
