@@ -6,9 +6,11 @@
 
 class Map: public QGraphicsItem
 {
+private:
+    QPixmap mappic;
+
 public:
     Map();
-    QPixmap mappic;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
     QRectF boundingRect() const;
 };

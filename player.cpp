@@ -1,5 +1,50 @@
 #include "player.h"
 
+QVector<Point> Player::getTrace() const
+{
+    return trace;
+}
+
+void Player::insertToEndTrace(Point value_to_add)
+{
+    trace.insert(trace.end(), value_to_add);
+}
+
+Point& Player::atTrace(const size_t &i)
+{
+    return trace[i];
+}
+
+Point Player::getCurrent() const
+{
+    return current;
+}
+
+void Player::setCurrent(const int &x, const int &y)
+{
+    current.setMP(x,y);
+}
+
+int Player::getX() const
+{
+    return x;
+}
+
+int Player::getY() const
+{
+    return y;
+}
+
+int Player::getDir() const
+{
+    return dir;
+}
+
+void Player::setDir(int value)
+{
+    dir = value;
+}
+
 Player :: Player(bool player, int start_x, int start_y, int start_dir)
 {
     x = start_x;

@@ -17,14 +17,18 @@ class GameWindow : public QMainWindow
 {
     Q_OBJECT
 
-public:
-    explicit GameWindow(QWidget *parent = 0);
+private:
     Map *tron_map;
     Player *p1;
     Player *p2;
     QGraphicsScene *scene;
     QTimer *timer;
     Textdrawing *draw_text;
+
+    Ui::GameWindow *ui;
+
+public:
+    explicit GameWindow(QWidget *parent = 0);
 
     void start_Game();
     void player_move();
@@ -35,9 +39,6 @@ public:
 
 public slots:
     void updater();
-
-private:
-    Ui::GameWindow *ui;
 };
 
 #endif // GAMEWINDOW_H

@@ -1,10 +1,11 @@
 #ifndef POINT_H
 #define POINT_H
 
-class Point
+struct Point
 {
 public:
     Point();
+    void setMP(const int &x, const int &y);
     int mp_x;
     int mp_y;
 };

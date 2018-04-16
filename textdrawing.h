@@ -6,13 +6,20 @@
 
 class Textdrawing: public QGraphicsItem
 {
-public:
-    Textdrawing();
+private:
     int x,y,w,h;
     bool game_over, playing, player1_win;
 
+
+public:
+    Textdrawing();
+
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
     QRectF boundingRect() const;
+    void setGame_over(bool value);
+    void setPlaying(bool value);
+    void setPlayer1_win(bool value);
+    bool getPlaying() const;
 };
 
 #endif // TEXTDRAWING_H

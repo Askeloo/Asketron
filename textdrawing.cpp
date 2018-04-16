@@ -1,5 +1,25 @@
 #include "textdrawing.h"
 
+void Textdrawing::setGame_over(bool value)
+{
+    game_over = value;
+}
+
+void Textdrawing::setPlaying(bool value)
+{
+    playing = value;
+}
+
+void Textdrawing::setPlayer1_win(bool value)
+{
+    player1_win = value;
+}
+
+bool Textdrawing::getPlaying() const
+{
+    return playing;
+}
+
 Textdrawing::Textdrawing()
 {
     w=350;
